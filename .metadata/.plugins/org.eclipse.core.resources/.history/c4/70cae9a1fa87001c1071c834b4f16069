@@ -1,0 +1,12 @@
+package com.crud.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController("/api")
+public class Controller {
+	@GetMapping("/data")
+	public String getdata() {
+		return "data recieved";
+	}
+}
